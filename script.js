@@ -19,7 +19,7 @@ let x = setInterval(function() {
 
 const sendEmail = event => {
   event.preventDefault()
-  let url = '#popup1';
+  let url = 'https://adoring-lovelace-3806d1.netlify.app/#popup1';
   sendAjax(url);
 }
 function sendAjax(url)
