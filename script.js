@@ -19,18 +19,20 @@ let x = setInterval(function() {
 
 const sendEmail = event => {
   event.preventDefault()
-  let url = 'https://adoring-lovelace-3806d1.netlify.app/#popup1';
-  sendAjax(url);
+  let email = event.target[0].value
+  let url = '#popup1';
+  sendAjax(url, email);
 }
-function sendAjax(url)
+function sendAjax(url, email)
 {
-  let req = new XMLHttpRequest();
+  let req = new createRequest();
+  console.log('email: ', email)
   req.onreadystatechange = function() {
     if (req.readyState == 4) {
       if(req.status == 200) console.log('Отправка формы выполнена');
     }
   }
-  req.open('GET',url,false);
+  req.open('GET',url,true);
   req.send(null);
 }
 function createRequest()
