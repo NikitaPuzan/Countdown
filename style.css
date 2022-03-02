@@ -64,7 +64,8 @@ main{
     line-height: 150%;
     margin: 40px 0 20px 0;
 }
-.content__button button{
+.content__button a{
+    text-decoration: none;
     padding: 17px 24px;
     margin-bottom:40px;
     border: none;
