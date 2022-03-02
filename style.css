@@ -116,6 +116,7 @@ footer{
 }
 
 .button {
+    margin-bottom: 30px;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
