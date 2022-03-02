@@ -19,7 +19,7 @@ let x = setInterval(function() {
 
 const sendEmail = event => {
   event.preventDefault()
-  let url = 'index.html#popup1';
+  let url = '#popup1';
   sendAjax(url);
 }
 function sendAjax(url)
@@ -27,7 +27,7 @@ function sendAjax(url)
   let req = createRequest();
   req.onreadystatechange = function() {
     if (req.readyState == 4) {
-      if(req.status == 200) alert('Отправка формы выполнена');
+      if(req.status == 200) console.log('Отправка формы выполнена');
     }
   }
   req.open('GET',url,true);
@@ -51,7 +51,6 @@ function createRequest()
       Request = new ActiveXObject('Msxml2.XMLHTTP');
     }
   }
-
   if (!Request)
   {
     alert('Невозможно создать XMLHttpRequest');
