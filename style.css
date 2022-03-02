@@ -115,17 +115,10 @@ footer{
 }
 
 .button {
-    font-size: 1em;
-    padding: 10px;
     color: #fff;
-    border: 2px solid #06D85F;
-    border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
-}
-.button:hover {
-    background: #06D85F;
 }
 .overlay {
     position: fixed;
@@ -175,7 +168,7 @@ footer{
 .popup__link{
     width: 200px;
     padding: 16px 74px;
-    margin: 30px auto 60px;
+    margin: 30px auto;
     border: none;
     font-weight: normal;
     font-size: 18px;
