@@ -52,10 +52,10 @@
   </div>
 
   <footer>
-    <div class="wrapper_input">
-      <input type="text" placeholder="Enter your Email and get notified">
-      <a class="button btn_area" href="#popup1">&#8594;</a>
-    </div>
+    <form class="wrapper_input" action="text.txt" onsubmit="sendEmail(event)">
+      <input type="email" class="email" placeholder="Enter your Email and get notified">
+      <input type="submit" class="button btn_area" value="&#8594;"/>
+    </form>
   </footer>
   <script src="script.js"></script>
   </body>

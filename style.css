@@ -96,23 +96,23 @@ footer{
     align-items: center;
     padding: 2px;
 }
-.btn_area {
-    padding: 10px;
-    background: red;
-    border-radius: 20px;
-    color: #fff;
-    font-size: 0.7em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-.wrapper_input input {
+
+.wrapper_input .email {
     border: none;
     background: none;
     width: calc(100% - 84px);
     height: 100%;
     text-indent: 10px;
+}
+.wrapper_input .button{
+    background-color: red;
+    border: none;
+}
+.btn_area {
+    padding: 12px;
+    background: red;
+    border-radius: 50%;
+    font-size: 0.7em;
 }
 
 .button {
