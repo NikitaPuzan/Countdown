@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown</title>
+  </head>
+  <body >
+  <header>
+      <img class="corner__left" src="images/BackgroundLeft.png" alt="">
+      <img class="corner__right" src="images/BackgroundRight.png" alt="">
+  </header>
+  <main class="container">
+    <a href="index.html"><img class="logo" src="images/Group.png" alt=""></a>
+    <div class="title">
+      <h1>
+        Under Construction
+      </h1>
+      <div class="title__text">We're making lots of improvements and will be back soon</div>
+    </div>
+    <div class="time">
+      <p id="demo"></p>
+      <img src="images/BackgroundDays.png" alt="">
+      <img src="images/BackgroundHours.png" alt="">
+      <img src="images/BackgroundMinutes.png" alt="">
+      <img src="images/BackgroundSeconds.png" alt="">
+    </div>
+    <div class="content__button">
+      <p>Check our event page when you wait:</p>
+      <button>Go to the event &nbsp;&nbsp;&nbsp;&nbsp; &#8594;</button>
+    </div>
+  </main>
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>SUCCESS!</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        You have successfully subscribed to the email newsletter
+      </div>
+      <div class="popup__link">
+        <a href="#" >close</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="wrapper_input">
+      <input type="text" placeholder="Enter your Email and get notified">
+      <a class="button btn_area" href="#popup1">&#8594;</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  </body>
+</html>
