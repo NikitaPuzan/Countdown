@@ -24,13 +24,13 @@ const sendEmail = event => {
 }
 function sendAjax(url)
 {
-  let req = createRequest();
+  let req = new XMLHttpRequest();
   req.onreadystatechange = function() {
     if (req.readyState == 4) {
       if(req.status == 200) console.log('Отправка формы выполнена');
     }
   }
-  req.open('GET',url,true);
+  req.open('GET',url,false);
   req.send(null);
 }
 function createRequest()
